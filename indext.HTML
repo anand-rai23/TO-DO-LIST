@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <main class="box">
+        <h3>Add Your Task</h3>
+
+        <!-- Input Section -->
+        <div class="input-area">
+            <input type="text" id="inputBx" placeholder="Write here..." />
+            <button id="addBtn">Add</button>
+        </div>
+
+        <!-- Task List -->
+        <ul id="list"></ul>
+    </main>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden"></div>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmModal" class="modal hidden">
+        <div class="modal-content">
+            <h3 id="confirmMessage">Are you sure?</h3>
+            <div class="modal-actions">
+                <button id="confirmYes" class="btn danger">Yes</button>
+                <button id="confirmNo" class="btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="javascript.js"></script>
+</body>
+
+</html>
